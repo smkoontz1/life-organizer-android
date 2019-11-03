@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayAmazonPriceActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/amazonResultsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/amazonResultsProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amazonResultsLabel"
+        android:padding="16dp"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/amazonResultsProductImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amazonResultsProductName"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="16dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/amazonResultsProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amazonResultsProductImage"
+        android:text="Price:"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
